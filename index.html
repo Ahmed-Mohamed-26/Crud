@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/index.css">
+
+    <title>Document</title>
+</head>
+<body>
+    <div class="w-75 m-auto py-4">
+        <label for="ProductName"  >Product Name</label>
+            <input type="text" class="form-control my-3 " id="ProductName" placeholder="Enter Product Name">
+
+            <label for="Productprice"  >Product price</label>
+            <input type="number" class="form-control my-3 " id="Productprice" placeholder="Enter First Name">
+
+            <label for="ProductCategory"  >Product Category</label>
+            <input type="text" class="form-control my-3 " id="ProductCategory" placeholder="Enter First Name">
+
+            <label for="ProductDesc"  >Product Desc</label>
+            <textarea type="text" class="form-control my-3 " id="ProductDesc" placeholder="Enter First Name"></textarea>
+
+            <button class="btn btn-info" onclick="addproduct()" id="mainbtn">add product</button>
+
+            <div class="w-75 m-auto py-5 ">
+                <h5>Search :</h5>
+                <input onkeyup="searchproducts(this.value)" class="form-control" id="search">
+
+            </div>
+
+            <table class="table my-4">
+                <thead>
+                    <th>index</th>
+                    <th>ProductName</th>
+                    <th>Productprice</th>
+                    <th>ProductCategory</th>
+                    <th>ProductDesc</th>
+                    <th>Update</th>
+                    <th>Delete</th>
+                </thead>
+                <tbody id="tablerow">
+                    <!-- <tr>
+                        <td>0</td>
+                        <td>sumdung</td>
+                        <td>35399</td>
+                        <td>mobile</td>
+                        <td>good</td>
+                        <td><button class="btn btn-warning">Update</button></td>
+                        <td><button class="btn btn-danger">Delete</button></td>
+
+                    </tr> -->
+                </tbody>
+            </table>
+    </div>
+
+
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/index.js"></script>
+
+</body>
+</html>
